@@ -22,7 +22,7 @@ while (a === true) {
  let username;
  let psd;
  let cnfm;
- var choice
+ var choice;
  username=prompt("Please enter your username");
  psd=prompt("Please enter the password");
  if (username=="library" && psd=="Book123"){
