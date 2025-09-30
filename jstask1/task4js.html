@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Dashboard</title>
+    <script src="task4js.js"></script>
+    <link href="task4js.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="task4js-icon.png" style="zoom:14%; float:left; margin-top:135px;margin-left:60px;">
+        <h1 style="font-size: 40px; margin-left:100px; margin-top:35px;font-family:DM Serif Text;">Student Dashboard</h1>
+        <h1 style="float:right; margin-top:-75px; margin-right:40px;font-family: DM Serif Text;font-weight: 200;font-size:25px;" id="greeting"></h1>
+        <hr style="border-width: 4px;margin-top:-20px;border-color:aliceblue">
+       <div style=" text-align:center;background-color:darkmagenta; width:auto;margin-top:-7px;"> <h2>"Beleive in Yourself"</h2> </div>
+    </header>
+<div id="mainframe">
+        <div class="crd" id="crd1">
+            <h1>Enter Your Personal Details:</h1>
+            <div id="profileresult" class="result"><h2> Result:</h2></div>
+    <div>
+    <h3>Name:</h3>
+  <input class="inputbox" type="text" id="inputname" placeholder="e.g. John Doe">
+  <h3>Birth Year:</h3>
+  <input class="inputbox" type="number" id="birthyear" placeholder="e.g. 2005">
+  <h3>City:</h3>
+  <input class="inputbox" type="text" id="inputcity" placeholder="e.g. Chennai">
+
+  <button id="infosub-btn" onclick="person()">Save Profile</button>
+
+        </div></div>
+
+        <div class="crd" id="crd2">
+            <h1>Calculate Your Age Eligibility:</h1>
+            <div></div><button id="chkage-btn" onclick=" agecheck()">Check</button>
+            <div id="ageresult" class="result"></div>
+        </div>
+        <div class="crd" id="crd3">
+            <h1>Basic Math Operation:</h1>
+            <h2 style="width:fit-content">Enter a number:</h2>
+            <input type="number" id="num1" style="height:40px; width:50px;">
+             <h2 style="width:fit-content">Enter a number:</h2>
+            <input type="number" id="num2" style="height:40px; width:50px;">
+            <div style="margin-top:-140px" id="arithmetic" class="result"></div>
+             <button id="evaluate-btn" onclick="arithmetic()">Evaluate</button>
+        </div>
+        <div class="crd" id="crd4">
+            <h1>Your info in JSON format:</h1>
+             <div style="margin-right:320px; font-size: 30px;" id="jsonresult" class="result"></div>
+              <button  id="json-btn" onclick="jsonstringyfy()">Get info</button>
+
+        </div>
+</div>
+</body>
+</html>
