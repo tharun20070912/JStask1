@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="animation.css">
+    <script src="quiz.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header id="greeting" style="margin-top:-150px;">
+         <h2 style="float:right; margin-right:100px;"><span id="greet"></span></h2>
+    </header>
+    
+    <div class="testnav">
+     <button style="height:40px;width:200px;border-radius:20px;background-color: (233, 228, 221);font-size:18px;margin-top:5px;margin-right:10px;margin-left:10px;" onclick="randomq()">Start test</button>
+     <h1 style="font-size:35px;margin-top:-40px;margin-left:620px;">All the very best!...</h1>
+     <button style="height:40px;width:200px;border-radius:20px;background-color: (233, 228, 221);font-size:18px;margin-top:-65px;margin-right:10px;margin-left:10px;float:right;" onclick="submitquiz()" onclick="document.location='test1.html/#resultcrd'">Submit</button>
+     </div>
+    <div class="qbg">
+        <div id="qcrd1" class="qcrd"></div>
+<div class="optl" id="o1" onclick="checkanswer(0,1)"></div>
+<div class="optr" id="o2" onclick="checkanswer(0,2)"></div>
+<div class="optm" id="o3" onclick="checkanswer(0,3)"></div>
+        </div>
+         <div class="qbg">
+<div id="qcrd2" class="qcrd"></div>
+<div class="optl" id="o4" onclick="checkanswer(1,1)"></div>
+<div class="optr" id="o5" onclick="checkanswer(1,2)"></div>
+<div class="optm" id="o6" onclick="checkanswer(1,3)"></div>
+        </div>
+         <div class="qbg">
+<div id="qcrd3" class="qcrd"></div>
+<div class="optl" id="o7" onclick="checkanswer(2,1)"></div>
+<div class="optr" id="o8" onclick="checkanswer(2,2)"></div>
+<div class="optm" id="o9" onclick="checkanswer(2,3)"></div>
+            </div>
+<div id="resultcrd">
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+ body {
+   font-family: sora;
+    background-color:rgb(222, 255, 242) ;
+   padding: 30px;
+   line-height: 1.6;
+ }
+ .ruleframe {
+   width: 700px;
+     margin-top:50px;
+     margin-left:350px;
+   background-color:rgb(198, 242, 253) ;
+   padding: 25px;
+   border-radius: 12px;
+   box-shadow: 0 4px 12px rgba(129, 16, 173, 0.838);
+   transition-duration: 0.5s;
+ }
+ .ruleframe:hover{
+   transform: scale(1.1);
+   box-shadow: 0 8px 25px rgba(204, 41, 185, 0.525);
+ }
+ h1 {
+   text-align: center;
+   color: #333;
+   font-size: 60px;
+   margin-top:20px;
+ }
+ ul {
+   margin-top: 20px;
+   margin-left:90px;
+ }
+ li {
+   margin: 10px 0;
+ }
+ .btn {
+   display: block;
+   width: 680px;
+   margin-top: 25px;
+   padding: 12px;
+   background: #b700ffa4;
+   color: white;
+   text-align: center;
+   text-decoration: none;
+   font-size: 18px;
+   border-radius: 8px;
+   margin-left:10px;
+ }
+ .btn:hover {
+   background: #b3005fa9;
+ }
+ p {
+     margin-left:115px;
+     font-weight: 800;
+     margin-top:25px;
+ }
+  </style>
+</head>
+<body>
+  <div class="contaier">
+    <section>
+            <div class="ruleframe">
+    <h1>Test Rules</h1>
+    <hr style="margin-top:-30px;">
+    <p>Please read the rules carefully before starting the test:</p>
+    <ul>
+      <li>You will have a fixed time limit to complete the test.</li>
+      <li>Do not refresh or close the window during the test.</li>
+      <li>Each question carries equal marks unless specified.</li>
+      <li>You cannot go back to previous questions once answered.</li>
+      <li>Make sure you have a stable internet connection.</li>
+      <li>Any form of cheating will result in disqualification.</li>
+    </ul>
+    <button href="rules.html" class="btn" onclick="document.location='test1.html'">I Agree, Start Test</button>
+</div>
+    </section>
+</body>
+</html>

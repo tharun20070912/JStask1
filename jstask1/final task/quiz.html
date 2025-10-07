@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="animation.css">
+    <script src="quiz.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button onclick="document.location='login.html'">Login &nbsp;</button>
+        <button onclick="document.location='#register'">Register</button>
+    </header>
+    <div id="brainstorm" class="sections">
+        <br>
+        <h3>Brainstorm</h3>
+        <h6>Sharpen your mind, prove your power.</h6>
+    </div>
+     <div id="testu" class="sections">
+        <br>
+        <h3>Evaluate Yourself</h3>
+        <h6>Test your brain, beat the challenge!</h6>
+    </div>
+    <div id="levelup" class="sections">
+        <br>
+        <h3>Level-Up</h3>
+        <h6>Unlock your knowledge, one question<br> at a time.</h6>
+    </div>
+     <div id="compete" class="sections">
+        <br>
+        <h3>Compete</h3>
+        <h6>Compete, conquer, and claim your spot on<br> the leaderboard!</h6>
+    </div>
+    <div id="libraries" class="sections">
+        <h3>Explore endless topics</h3>
+        <h6>Test your knowledge across the board!<br>From science to movies—quizzes<br> for every curious mind!</h6>
+    </div>
+    <div id="clock" class="sections" style="margin-top:-180px;">
+        <br>
+        <h3>Race the Clock</h3>
+        <h6>Challenge your mind and your speed—don’t let<br> the timer win!</h6>
+    </div>
+    <br>
+    <form id="register">
+   <h2 style="font-size: 60px;font-family: sora;">Register</h2>
+    
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age" min="1" max="120" required>
+    
+    <label for="emailid">Email ID</label>
+    <input type="email" id="emailid" name="emailid" required>
+    
+    <label for="password">Create Password</label>
+    <input type="password" id="password" name="password" required>
+    
+    <label for="retypepassword">Retype Password</label>
+    <input type="password" id="retypepassword" name="retypepassword" required>
+    
+    <button onclick="register()">Register</button>
+  </form>
+
+</body>
+</html>
