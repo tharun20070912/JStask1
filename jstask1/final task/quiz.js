@@ -22,7 +22,10 @@ function register(){
     const retypepassword = document.getElementById("retypepassword").value;
 
     if(!name||!age||!emailid||!password||!retypepassword){
-        alert("Please fill out all the fields")
+        alert("Please fill out all the fields");
+    }
+    else if(age<13){
+        alert("Age must be 13 or above");
     }
     else if(password!=retypepassword){
         alert("Password doesn't match");
@@ -101,24 +104,24 @@ function randomq(){
     selectedquestions=[quest1,quest2,quest3];
     score=0;
 
-    // Show first question (for now)
+    
     const qout= document.getElementById("qcrd1");
         qout.innerHTML='<h2>'+quest1.q+'</h2>';
-    document.getElementById('o1').innerHTML='<h2 style="margin-top:0px;">'+quest1.a+'</h2>';
-    document.getElementById('o2').innerHTML='<h2 style="margin-top:0px;">'+quest1.b+'</h2>';
-    document.getElementById('o3').innerHTML='<h2 style="margin-top:0px;">'+quest1.c+'</h2>';
+    document.getElementById('1').innerHTML='<h2 style="margin-top:0px;">'+quest1.a+'</h2>';
+    document.getElementById('2').innerHTML='<h2 style="margin-top:0px;">'+quest1.b+'</h2>';
+    document.getElementById('3').innerHTML='<h2 style="margin-top:0px;">'+quest1.c+'</h2>';
 
     const qout2= document.getElementById("qcrd2");
         qout2.innerHTML='<h2>'+quest2.q+'</h2>';
-    document.getElementById('o4').innerHTML='<h2 style="margin-top:0px;">'+quest2.a+'</h2>';
-    document.getElementById('o5').innerHTML='<h2 style="margin-top:0px;">'+quest2.b+'</h2>';
-    document.getElementById('o6').innerHTML='<h2 style="margin-top:0px;">'+quest2.c+'</h2>';
+    document.getElementById('4').innerHTML='<h2 style="margin-top:0px;">'+quest2.a+'</h2>';
+    document.getElementById('5').innerHTML='<h2 style="margin-top:0px;">'+quest2.b+'</h2>';
+    document.getElementById('6').innerHTML='<h2 style="margin-top:0px;">'+quest2.c+'</h2>';
 
     const qout3= document.getElementById("qcrd3");
         qout3.innerHTML='<h2>'+quest3.q+'</h2>';
-    document.getElementById('o7').innerHTML='<h2 style="margin-top:0px;">'+quest3.a+'</h2>';
-    document.getElementById('o8').innerHTML='<h2 style="margin-top:0px;">'+quest3.b+'</h2>';
-    document.getElementById('o9').innerHTML='<h2 style="margin-top:0px;">'+quest3.c+'</h2>';
+    document.getElementById('7').innerHTML='<h2 style="margin-top:0px;">'+quest3.a+'</h2>';
+    document.getElementById('8').innerHTML='<h2 style="margin-top:0px;">'+quest3.b+'</h2>';
+    document.getElementById('9').innerHTML='<h2 style="margin-top:0px;">'+quest3.c+'</h2>';
 
     console.log("Q1:"+ quest1.q + "\n"+quest1.ans);
     console.log("Q2:"+ quest2.q + "\n"+quest2.ans); 
@@ -138,7 +141,6 @@ function checkanswer(questnum, selectedoption) {
     if (selectedoption==crctans){
         console.log("Correct answer");
         score++;
-
     }
     else{
         console.log("Wrong");
